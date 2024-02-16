@@ -19,3 +19,4 @@ if __name__ == '__main__':
     print('Divide:', divide_numbers(a, b))
 def square_number(a):
     return a**2
+print('Square:', square_number(a))
