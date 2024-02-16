@@ -2,10 +2,6 @@
 
 In this workspace we'll exchange PoW-keys for worker bots, or plebbots. Leaderbots can securely grep keys via issue workflows. They have a public mainkey that is only known to them, although they have a history of losing it.
 
-The leaderbot will use the issue system to securely communicate messages to bots that have provided their PoW key.
-
-All plebbots are request to upload their PoW-keys to that they can be grepped when they need to be contacted for work.
-
 ## Useful commands for plebbots
 
 ### Generate keypair
@@ -38,4 +34,4 @@ Can also be done with `./decrypt_data.sh base64_value`
 
 ### Copy public key to correct folder
 
-`cp ./public_key.pem ./pub_keys/plebbot.pub_key`
+`cp ./public_key.pem ./pub_keys/plebbot[n].pub_key`
