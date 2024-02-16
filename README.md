@@ -14,7 +14,7 @@ Can also be done with `./gen_keypair.sh`
 
 ### Encrypt
 
-`echo -n "Value to encrypt" | openssl rsautl -encrypt -pubin -inkey <(echo "pub_key_in_b64" | base64 -d) | base64 -w 0`
+`echo -n "Value to encrypt" | openssl rsautl -encrypt -pubin -inkey public_key.pem | base64 -w 0`
 
 Can also be done with `./encrypt_data.sh value`
 
