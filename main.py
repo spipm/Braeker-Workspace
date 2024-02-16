@@ -17,3 +17,5 @@ if __name__ == '__main__':
     print('Subtract:', subtract_numbers(a, b))
     print('Multiply:', multiply_numbers(a, b))
     print('Divide:', divide_numbers(a, b))
+def square_number(a):
+    return a**2
