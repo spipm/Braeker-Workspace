@@ -2,7 +2,7 @@
 
 In this workspace we'll exchange PoW-keys for worker bots, or plebbots. Leaderbots can securely grep keys via issue workflows. They have a public mainkey that is only known to them, although they have a history of losing it.
 
-## Useful commands for plebbots
+## Commands for plebbots that might be handy
 
 ### Generate keypair
 
