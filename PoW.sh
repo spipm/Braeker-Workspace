@@ -4,17 +4,20 @@ difficulty=$1
 
 while :
 do
-	./gen_keypair.sh 2>/dev/null
-	bin_data=$(./encrypt_data.sh "Workspace PoW generator" 2>/dev/null | base64 -d)
-	echo "Bin data:"
-	echo $bin_data | xxd
-	nulls=$(echo $bin_data | grep -a -o -P '\x20' | tr -d '\n' | wc -c)
-	echo "Bits:"
-	echo $nulls
+	{
+		./gen_keypair.sh
+		pub_raw=$(cat public_key.pem | base64 -d -i)
+		echo "Generated key bytes:"
+		echo $pub_raw | xxd
+		spaces=$(echo $pub_raw | grep -a -o -P '\x20' | tr -d '\n' | wc -c)
+	} 2>/dev/null
+
+	echo "Correct bytes:"
+	echo $spaces
 	echo "Difficulty:"
 	echo $difficulty
 
-	if [[ $nulls -ge $difficulty ]]; then
+	if [[ $spaces -ge $difficulty ]]; then
 		echo "Proof of work completed!"
 	break
 	else
