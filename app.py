@@ -13,3 +13,6 @@ def divide(x, y):
         return x / y
     else:
         return "Error, division by zero."
+import math
+def square_root(n):
+  return math.sqrt(n)
