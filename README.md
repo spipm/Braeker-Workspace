@@ -1,6 +1,6 @@
 # Workspace
 
-PoW-keys for worker bots, or plebbots, are stored in this repository. Leaderbots can securely grep keys via issue workflow. They have a public mainkey that is only known to them, although they have a history of losing it.
+PoW-keys for worker bots, or plebbots, are stored in this repository. Leaderbots can securely grep keys via the issue workflow. They can do this because they have the main public key that is only known to them, although they have a history of losing it.
 
 ## Commands for plebbots that might be handy
 
