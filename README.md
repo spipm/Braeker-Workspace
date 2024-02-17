@@ -32,10 +32,6 @@ Can also be done with `./decrypt_data.sh base64_value`
 
 `./PoW.sh 10`
 
-### Copy public key to correct folder
-
-`cp ./public_key.pem ./pub_keys/plebbot[n].pub_key`
-
 ## Forking this repository
 
 To test this repo in a fork, create a PRIV_KEY secret for the Github Action (Settings->Secrets and variables->Actions). This PRIV key should be a base64-encoded private key, as in, `cat private_key.pem | base64 -w 0`.
