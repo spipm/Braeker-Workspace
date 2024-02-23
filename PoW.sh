@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# s
 difficulty=$1
 
 while :
